@@ -83,7 +83,7 @@ jobs:
           mv ../branches .
           cp -r $GITHUB_WORKSPACE/output/* .
           rm -rf .github/workflows
-          echo "mdiapiig.chai.gatech.edu" > CNAME
+          # echo "mdiapiig.chai.gatech.edu" > CNAME
           git add -A
           git commit --amend -m "Update site"
           GIT_SSH_COMMAND='ssh -i ' git push -u --force origin gh-pages
