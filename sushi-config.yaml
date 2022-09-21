@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.mdi.api
-canonical: https://mortalityreporting.github.io/MDI-API-IG/
+canonical: https://mortalityreporting.github.io/MDI-API-IG
 name: MDIAPIIG
 title: Medicolegal Death Investigation (MDI) API IG
 description: API Documentation for the MDI FHIR IG
@@ -24,8 +24,8 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
-#   hl7.fhir.us.core: 3.1.0
+dependencies:
+  hl7.fhir.us.core: 5.0.1
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
