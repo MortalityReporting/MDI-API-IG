@@ -1,15 +1,16 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "fhir.mdi-api",
+  "id": "fhir.mdi.api",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MDIAPIIG</h2><p>The official URL for this implementation guide is: </p><pre>http://mdiapiig.chai.gatech.edu/ImplementationGuide/fhir.mdi-api</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MDIAPIIG</h2><p>The official URL for this implementation guide is: </p><pre>https://mortalityreporting.github.io/MDI-API-IG/ImplementationGuide/fhir.mdi.api</pre><div><p>API Documentation for the MDI FHIR IG</p>\n</div></div>"
   },
-  "url": "http://mdiapiig.chai.gatech.edu/ImplementationGuide/fhir.mdi-api",
+  "url": "https://mortalityreporting.github.io/MDI-API-IG/ImplementationGuide/fhir.mdi.api",
   "version": "0.1.0",
   "name": "MDIAPIIG",
+  "title": "Medicolegal Death Investigation (MDI) API IG",
   "status": "draft",
-  "date": "2022-09-21T16:36:52+00:00",
+  "date": "2022-09-21T16:58:48+00:00",
   "publisher": "Georgia Tech Research Institute",
   "contact": [
     {
@@ -22,7 +23,8 @@
       ]
     }
   ],
-  "packageId": "fhir.mdi-api",
+  "description": "API Documentation for the MDI FHIR IG",
+  "packageId": "fhir.mdi.api",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
@@ -33,6 +35,12 @@
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
       "version": "4.0.0"
+    },
+    {
+      "id": "hl7_fhir_us_core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "5.0.1"
     }
   ],
   "definition": {
@@ -149,7 +157,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://mdiapiig.chai.gatech.edu/history.html"
+            "valueString": "https://mortalityreporting.github.io/MDI-API-IG/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -329,29 +337,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/MyPatient"
-        },
-        "name": "MyPatient",
-        "description": "An example profile of the Patient resource.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
         "reference": {
-          "reference": "Patient/PatientExample"
+          "reference": "Patient/AliceFreeman"
         },
-        "name": "PatientExample",
-        "description": "An example of a patient with a license to krill.",
-        "exampleCanonical": "http://mdiapiig.chai.gatech.edu/StructureDefinition/MyPatient"
+        "name": "AliceFreeman",
+        "exampleBoolean": true
       }
     ],
     "page": {

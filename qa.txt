@@ -1,15 +1,16 @@
 ﻿MDIAPIIG : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 0
+err = 0, warn = 1, info = 2
 IG Publisher Version: 1.1.128 Out of date - current version is 1.2.3
-Generated Wed Sep 21 16:37:09 UTC 2022. FHIR version 4.0.1 for fhir.mdi-api#0.1.0 (canonical = http://mdiapiig.chai.gatech.edu)
- Build Errors : 0 / 0 / 0
- /home/runner/work/MDI-API-IG/MDI-API-IG/fsh-generated/resources/ImplementationGuide-fhir.mdi-api : 0 / 0 / 1
- /home/runner/work/MDI-API-IG/MDI-API-IG/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
- /home/runner/work/MDI-API-IG/MDI-API-IG/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 1
+Generated Wed Sep 21 16:59:33 UTC 2022. FHIR version 4.0.1 for fhir.mdi.api#0.1.0 (canonical = https://mortalityreporting.github.io/MDI-API-IG)
+ Build Errors : 0 / 1 / 0
+ /home/runner/work/MDI-API-IG/MDI-API-IG/fsh-generated/resources/ImplementationGuide-fhir.mdi.api : 0 / 0 / 1
+ /home/runner/work/MDI-API-IG/MDI-API-IG/fsh-generated/resources/Patient-AliceFreeman : 0 / 0 / 3
 </table>
 == n/a ==
-== fsh-generated/resources/ImplementationGuide-fhir.mdi-api.json ==
-== fsh-generated/resources/Patient-PatientExample.json ==
-== fsh-generated/resources/StructureDefinition-MyPatient.json ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/AliceFreeman.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== fsh-generated/resources/ImplementationGuide-fhir.mdi.api.json ==
+== fsh-generated/resources/Patient-AliceFreeman.json ==
+INFORMATION: Patient/AliceFreeman: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/AliceFreeman: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated

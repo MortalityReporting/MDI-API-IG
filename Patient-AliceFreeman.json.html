@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FHIR.MDI-API\PatientExample - JSON Representation - FHIR v4.0.1</title>
+    <title>FHIR.MDI.API\AliceFreeman - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,15 +41,15 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.2"}
-    h3,h4,h5,h6{--heading-prefix:"2.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Medicolegal Death Investigation (MDI) API IG</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -96,7 +96,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PatientExample</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>AliceFreeman</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -109,7 +109,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">MDIAPIIG - Local Development build (v0.1.0). See the <a href="http://mdiapiig.chai.gatech.edu/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Medicolegal Death Investigation (MDI) API IG - Local Development build (v0.1.0). See the <a href="https://mortalityreporting.github.io/MDI-API-IG/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -122,13 +122,13 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="Patient-PatientExample.html">Narrative Content</a>
+    <a href="Patient-AliceFreeman.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="Patient-PatientExample.xml.html">XML</a>
+      <a href="Patient-AliceFreeman.xml.html">XML</a>
     </li>
   
 
@@ -142,7 +142,7 @@
 
   
     <li>
-      <a href="Patient-PatientExample.ttl.html">TTL</a>
+      <a href="Patient-AliceFreeman.ttl.html">TTL</a>
     </li>
   
 
@@ -154,7 +154,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: PatientExample - JSON Representation</h2>
+<h2 id="root">: AliceFreeman - JSON Representation</h2>
   <table class="colsi">
     <tr>
 
@@ -169,7 +169,7 @@
   </table>
 
 
-<p><a href="Patient-PatientExample.json" no-download="true">Raw json</a> | <a href="Patient-PatientExample.json" download>Download</a></p>
+<p><a href="Patient-AliceFreeman.json" no-download="true">Raw json</a> | <a href="Patient-AliceFreeman.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -179,22 +179,90 @@
   <pre class="json"><code class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resourceType</a>" : "Patient",
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "PatientExample",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "AliceFreeman",
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://mdiapiig.chai.gatech.edu/StructureDefinition/MyPatient"
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
     ]
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;James Pond &lt;/b&gt; (no stated gender), DoB Unknown&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Alice J. Freeman &lt;/b&gt; female, DoB: 1978-03-12 ( Social Security number: 987054321 (USUAL))&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "detailed",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.6.238",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2029-7",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Asian Indian"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "text",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Asian Indian"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "ombCategory",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:oid:2.16.840.1.113883.6.238",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "2186-5",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Not Hispanic or Latino"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "text",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Not Hispanic or Latino"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a>" : "usual",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "SS",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Social Security number"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Social Security number"
+      },
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://hospital.smarthealthit.org",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "987054321"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a>" : true,
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Pond",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Freeman",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-        "James"
+        "Alice",
+        "J."
       ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "female",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1978-03-12",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a>" : "home",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
+        "112 Miramar Ct"
+      ],
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Danville",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "Nova Scotia",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a>" : "CA"
     }
   ]
 }</code></pre>
@@ -227,7 +295,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gtri.gatech.edu">Georgia Tech Research Institute</a>.  Package fhir.mdi-api#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 21, 2022 16:36+0000">2022-09-21</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gtri.gatech.edu">Georgia Tech Research Institute</a>.  Package fhir.mdi.api#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 21, 2022 16:58+0000">2022-09-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

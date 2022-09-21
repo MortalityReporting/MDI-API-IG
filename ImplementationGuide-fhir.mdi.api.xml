@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="fhir.mdi-api"/>
+  <id value="fhir.mdi.api"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MDIAPIIG</h2><p>The official URL for this implementation guide is: </p><pre>http://mdiapiig.chai.gatech.edu/ImplementationGuide/fhir.mdi-api</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MDIAPIIG</h2><p>The official URL for this implementation guide is: </p><pre>https://mortalityreporting.github.io/MDI-API-IG/ImplementationGuide/fhir.mdi.api</pre><div><p>API Documentation for the MDI FHIR IG</p>
+</div></div>
   </text>
-  <url value="http://mdiapiig.chai.gatech.edu/ImplementationGuide/fhir.mdi-api"/>
+  <url value="https://mortalityreporting.github.io/MDI-API-IG/ImplementationGuide/fhir.mdi.api"/>
   <version value="0.1.0"/>
   <name value="MDIAPIIG"/>
+  <title value="Medicolegal Death Investigation (MDI) API IG"/>
   <status value="draft"/>
-  <date value="2022-09-21T16:36:52+00:00"/>
+  <date value="2022-09-21T16:58:48+00:00"/>
   <publisher value="Georgia Tech Research Institute"/>
   <contact>
     <name value="Georgia Tech Research Institute"/>
@@ -18,13 +20,19 @@
       <value value="https://gtri.gatech.edu"/>
     </telecom>
   </contact>
-  <packageId value="fhir.mdi-api"/>
+  <description value="API Documentation for the MDI FHIR IG"/>
+  <packageId value="fhir.mdi.api"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
     <version value="4.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="5.0.1"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -96,7 +104,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://mdiapiig.chai.gatech.edu/history.html"/>
+        <valueString value="https://mortalityreporting.github.io/MDI-API-IG/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -205,25 +213,13 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MyPatient"/>
-      </reference>
-      <name value="MyPatient"/>
-      <description value="An example profile of the Patient resource."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/PatientExample"/>
+        <reference value="Patient/AliceFreeman"/>
       </reference>
-      <name value="PatientExample"/>
-      <description value="An example of a patient with a license to krill."/>
-      <exampleCanonical value="http://mdiapiig.chai.gatech.edu/StructureDefinition/MyPatient"/>
+      <name value="AliceFreeman"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
