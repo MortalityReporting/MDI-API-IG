@@ -3,7 +3,7 @@ name: FHIR IG Auto-build
 on:
   push:
     branches:
-      - '*'
+      - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -82,29 +82,6 @@ jobs:
           rm -rf *
           mv ../branches .
           cp -r $GITHUB_WORKSPACE/output/* .
-          rm -rf .github/workflows
-          echo "terminology.smarthealth.cards" > CNAME
-          git add -A
-          git commit --amend -m "Update site"
-          GIT_SSH_COMMAND='ssh -i ' git push -u --force origin gh-pages
-
-      - name: Push build to gh-pages (non-default branches)
-        if: ${{ github.ref != 'refs/heads/main' }}
-        run: |
-          # Deploy
-          git config --global user.email "noreply@mitre.org"
-          git config --global user.name "Auto-build"
-          git worktree add $GITHUB_WORKSPACE/../gh-pages
-          cd $GITHUB_WORKSPACE/../gh-pages
-
-          # Refresh in case another build has happened while this was running
-          # This mitigates a race condition with multiple simultaneous builds
-          git fetch origin
-          git reset --hard origin/gh-pages
-
-          mkdir -p branches/${GITHUB_REF##*/}
-          rm -rf branches/${GITHUB_REF##*/}/*
-          cp -r $GITHUB_WORKSPACE/output/* branches/${GITHUB_REF##*/}/
           rm -rf .github/workflows
           echo "terminology.smarthealth.cards" > CNAME
           git add -A
