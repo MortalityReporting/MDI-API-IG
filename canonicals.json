@@ -1,0 +1,16 @@
+[
+  {
+    "id": "fhir.mdi-api",
+    "type": "ImplementationGuide",
+    "url": "http://mdiapiig.chai.gatech.edu/ImplementationGuide/fhir.mdi-api",
+    "version": "0.1.0",
+    "name": "MDIAPIIG"
+  },
+  {
+    "id": "MyPatient",
+    "type": "StructureDefinition",
+    "url": "http://mdiapiig.chai.gatech.edu/StructureDefinition/MyPatient",
+    "version": "0.1.0",
+    "name": "MyPatient"
+  }
+]

@@ -1,0 +1,15 @@
+﻿MDIAPIIG : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 0
+IG Publisher Version: 1.1.128 Out of date - current version is 1.2.3
+Generated Wed Sep 21 16:37:09 UTC 2022. FHIR version 4.0.1 for fhir.mdi-api#0.1.0 (canonical = http://mdiapiig.chai.gatech.edu)
+ Build Errors : 0 / 0 / 0
+ /home/runner/work/MDI-API-IG/MDI-API-IG/fsh-generated/resources/ImplementationGuide-fhir.mdi-api : 0 / 0 / 1
+ /home/runner/work/MDI-API-IG/MDI-API-IG/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /home/runner/work/MDI-API-IG/MDI-API-IG/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/ImplementationGuide-fhir.mdi-api.json ==
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-MyPatient.json ==
