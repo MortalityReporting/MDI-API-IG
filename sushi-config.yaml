@@ -3,11 +3,11 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.mdi-api
-canonical: http://mdiapiig.chai.gatech.edu
+id: fhir.mdi.api
+canonical: https://mortalityreporting.github.io/MDI-API-IG/
 name: MDIAPIIG
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: Medicolegal Death Investigation (MDI) API IG
+description: API Documentation for the MDI FHIR IG
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html

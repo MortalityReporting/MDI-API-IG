@@ -1,3 +1,3 @@
-# MDIAPIIG
+# Medicolegal Death Investigation (MDI) API IG
 
-Feel free to modify this index page with your own awesome content!
+This is the beginning template of the MDI API IG.
